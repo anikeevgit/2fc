@@ -1,0 +1,8 @@
+.modal-body {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-body input {
+    border-radius: 50px;
+}

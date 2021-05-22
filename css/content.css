@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+body {
+  display: grid;
+  overflow: hidden;
+  grid-template-areas: 'header header header' 'nav article article' 'nav article article';
+  grid-template-rows: 70px 1fr;
+  grid-template-columns: 30% 1fr 15%;
+  grid-gap: 20px;
+  height: 100vh;
+  margin: 0;
+  background-color: #e4e4e4;
+  overflow: hidden;
+}
+
+header,
+    article,
+    nav
+    /* div {
+    padding: 20px;
+    background: yellow;
+} */
+    
+    #pageHeader {
+  background-color: #e4e4e4;
+  grid-area: header;
+  font-size: 25px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+/* #pageFooter {
+        grid-area: footer;
+    } */
+
+#mainArticle {
+  background-color: #e4e4e4;
+  grid-area: article;
+  border-width: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#mainNav {
+  background-color: #e4e4e4;
+  border-width: 10px;
+  grid-area: nav;
+  display: block;
+  width: 432px;
+  height: 678px
+  /* position: fixed; */
+}
+
+.add {
+  position: fixed;
+  left: 60px;
+  bottom: 0;
+}
+
+.box {
+  width: 280px;
+  margin: 25px 10px 40px;
+  padding: 5px 20px;
+  background: #eee;
+}
+
+.box .text {
+  max-height: 80px;
+  overflow: hidden;
+}
+
+.box.active .text {
+  max-height: 100%;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background: #a5e6b3;
+  cursor: pointer;
+}
+
+#code {
+  width: 40%;
+  margin-left: 230px;
+  margin-right: 299px;
+  font-size: 100px;
+  /* font-color: #FFDAB9; */
+  font-size: 90px;
+}
+
+#su {
+  position: absolute;
+  width: 100%;
+}
+
+.main {
+  height: 560px;
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+  font-size: 40px;
+  overflow: scroll;
+}
+
+.acc {
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+  font-size: 40px;
+  margin-left: 60px;
+}
+
+.btn.btn-danger {
+  position: fixed;
+  top: 711px;
+  padding: 15px 148px;
+  display: inline-block;
+}
